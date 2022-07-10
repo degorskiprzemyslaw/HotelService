@@ -13,6 +13,40 @@ public class Room {
         this.doesHaveBathroom = doesHaveBathroom;
         this.booked = booked;
     }
+
+    public Room(boolean booked) {
+        this.booked = booked;
+    }
+
+    public int getRoomNumber() {
+        return roomNumber;
+    }
+
+    public RoomSize getRoomSize() {
+        return roomSize;
+    }
+
+    public boolean isDoesHaveBathroom() {
+        return doesHaveBathroom;
+    }
+
+    public boolean isBooked() {
+        return booked;
+    }
+
+    public void setBooked(boolean booked) {
+        this.booked = booked;
+    }
+
+    @Override
+    public String toString() {
+        return "Room{" +
+                "roomNumber=" + roomNumber +
+                ", roomSize=" + roomSize +
+                ", doesHaveBathroom=" + doesHaveBathroom +
+                ", booked=" + booked +
+                '}';
+    }
 }
 
 

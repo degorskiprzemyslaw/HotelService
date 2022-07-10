@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Hotel {
 
-    List<Room> rooms = new ArrayList<>();
+    private List<Room> rooms = new ArrayList<>();
 
     public Hotel() {
         rooms.add(new Room(1, RoomSize.TRIPLE_ROOM, true, false ));
@@ -19,5 +19,16 @@ public class Hotel {
         rooms.add(new Room(9, RoomSize.SINGLE_ROOM, true, true ));
         rooms.add(new Room(10, RoomSize.SINGLE_ROOM, true, false ));
         rooms.add(new Room(11, RoomSize.FAMILY_ROOM, false, true ));
+    }
+
+    public List<Room> getRooms() {
+        return rooms;
+    }
+
+    @Override
+    public String toString() {
+        return "Hotel{" +
+                "rooms=" + rooms +
+                '}';
     }
 }
