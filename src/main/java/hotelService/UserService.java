@@ -7,13 +7,13 @@ public class UserService {
 
 
     public void getRoomNumbers(){
-        for (Room room : hotel.getRooms()){
-            System.out.println(room.getRoomNumber());
-        }
+        System.out.println();
+        System.out.println(getHotel());
+
     }
 
     public void getFreeRoomNumbers(){
-        for (Room room : hotel.getRooms()){
+        for (Room room : getHotel().getRooms()){
             if(!room.isBooked())
             System.out.println(room.getRoomNumber());
         }
@@ -33,6 +33,10 @@ public class UserService {
             room.setBooked(true);
 
         }
+    }
+
+    public Hotel getHotel() {
+        return hotel;
     }
 
     public void vacateARoom(){
