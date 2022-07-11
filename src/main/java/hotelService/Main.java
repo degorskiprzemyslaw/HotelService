@@ -54,6 +54,7 @@ public class Main {
                     default:
                         break;
                 }
+
             } catch (InputMismatchException e){
                 System.out.println("Wybrano niepoprawną opcję");
                 menu();
@@ -62,6 +63,9 @@ public class Main {
                 System.out.println("Wybrano niepoprawny numer");
                 menu();
             }
+
+
+
 
         } while (input != 0);
     }
