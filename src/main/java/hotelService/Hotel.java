@@ -31,4 +31,5 @@ public class Hotel {
                 "rooms=" + rooms +
                 '}';
     }
+
 }
